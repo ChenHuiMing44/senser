@@ -1,0 +1,24 @@
+{
+  "name": "senser",
+  "version": "1.0.0",
+  "description": "for h5 senser page,for example advance page. eg.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "hmchen",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.2.1"
+  },
+  "dependencies": {
+    "sa-sdk-javascript": "^1.12.8"
+  }
+}
