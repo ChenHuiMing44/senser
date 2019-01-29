@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="dist/sensor.js"></script>
+  <script>
+    // window.onload = function(){
+
+    // }
+
+	  // window.addEventListener("load", function () {
+		 //  let inputList = document.querySelectorAll("input");
+		 //  inputList.forEach(function (item , index) {
+			//   //	input的输入  判断是否为需要埋点的值
+			//   let nodeAttribute = item.attributes.getNamedItem("blh5-sensor");
+			//   if(nodeAttribute){
+    //
+			// 	  item.addEventListener("focus" , function (event) {
+			// 		  this.focusTimeStamp = event.timeStamp;
+    //
+			// 	  })
+    //
+			// 	  item.addEventListener("blur" , function (event) {
+			// 	  	console.log(event)
+			// 		  let sensorKey = nodeAttribute.value;
+			// 		  let inputTimeStamp = event.timeStamp - this.focusTimeStamp;
+			// 		  if(!inputTimeStamp || inputTimeStamp < 0){
+			// 			  inputTimeStamp = 0
+			// 		  }
+			// 		  let val = this.value;
+			// 		  //上传三个值
+     //        //nodeName
+     //        console.log(item.id);
+			// 		  console.log(sensorKey+inputTimeStamp+val);
+			// 	  })
+    //
+			//   }
+		 //  })
+    //
+	  // });
+
+
+  </script>
+</head>
+<body>
+<div class="name" style="width: 300px;margin: auto;height: 200px" blh5-sensor="">
+  <p>呵呵死人</p>
+  <button style="width: 100px;height: 30px" blh5-sensor="clk_btn">你点一下我？</button>
+  <input blh5-sensor="et_one" id="inputId"/>
+  <input blh5-sensor="et_two"/>
+
+</div>
+<script>
+	$sensor.init({
+		appname: "贝连",
+	})
+</script>
+</body>
+</html>

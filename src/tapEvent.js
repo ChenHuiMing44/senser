@@ -1,14 +1,14 @@
-import currentOptions from "./options"
 import updateEvent from "./updateEvent"
 
-module.exports = function(){
+export default function(currentOptions){
 	window.addEventListener("load",function () {
 		function dealItem(node , event){
-			let attributeNode = node.attributes.getNamedItem(currentOptions.options.clickName);
-			if(attributeNode){
+			// let attributeNode = node.attributes.getNamedItem(currentOptions.options.clickName);
+			let nodeAttribute = node.getAttribute("blh5-sensor");
+			if(nodeAttribute){
 				// console.log(attributeNode.value);
 				// 上传埋点
-				let eventKey = attributeNode.value;
+				let eventKey = nodeAttribute;
 				let updateVal = {
 					elementId: node.id,
 					elementType: node.nodeName,
