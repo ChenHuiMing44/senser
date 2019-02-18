@@ -22,8 +22,6 @@ const getTrackParams = (eventName,params) =>{
 	},params);
 };
 
-
-
 export default function (eventName , params) {
 	sa.track(currentOptions.options.eventname, getTrackParams(eventName,params));
 };
