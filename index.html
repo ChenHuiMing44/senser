@@ -42,6 +42,20 @@
 
 
   </script>
+  <script>
+		window.onload = function () {
+			console.log(22222);
+			window.addEventListener("load",function () {
+				console.log(22222);
+			})
+			$sensor.init({
+				appname: "贝连",
+				eventname: "_byjh5_promotion"
+			})
+
+		}
+
+  </script>
 </head>
 <body>
 <!--这个页面只是demo页面-->
@@ -50,12 +64,9 @@
   <button style="width: 100px;height: 30px" blh5-sensor="clk_btn">你点一下我？</button>
   <input blh5-sensor="et_one" id="inputId"/>
   <input blh5-sensor="et_two"/>
+  <a id="name" href="#" blh5-sensor="a-click">点我</a>
 
 </div>
-<script>
-	$sensor.init({
-		appname: "贝连",
-	})
-</script>
+
 </body>
 </html>
